@@ -1,68 +1,106 @@
-/* Базовые стили для всей страницы */
+/* --- Стили из примера на слайде 12 --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding-top: 60px; /* Добавляем отступ сверху, чтобы контент не заезжал под шапку */
-    color: #333;
+    padding-top: 60px; /* Отступ для контента, чтобы не залезал под шапку */
 }
 
-/* Плавная прокрутка к разделам */
-html {
-    scroll-behavior: smooth;
+h1 {
+    color: blue;
 }
 
-/* Стили для шапки и навигации */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed; /* Фиксируем шапку вверху экрана */
-    top: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 1000;
+p {
+    font-size: 18px;
+}
+/* --- Конец стилей из примера --- */
+
+
+/* --- Стили для навигации из примера на слайде 28 --- */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Центрируем меню */
+    padding-left: 0; /* Убираем отступ по умолчанию у списка */
+    margin: 0;
+}
+
+nav li {
+    margin-right: 20px;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
     text-decoration: none;
-    font-size: 18px;
+    color: blue;
+    font-size: 1.2em; /* Немного увеличим шрифт для наглядности */
+}
+/* --- Конец стилей из примера --- */
+
+
+/* --- Базовые стили для общего дизайна --- */
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка по якорям */
 }
 
-nav a:hover {
-    text-decoration: underline;
+header {
+    background-color: #f8f8f8;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    position: fixed; /* Фиксируем шапку вверху */
+    top: 0;
+    width: 100%;
 }
 
-/* Стили для основных разделов */
 section {
-    padding: 60px 20px; /* Вертикальные и горизонтальные отступы */
-    min-height: 250px; /* Минимальная высота для наглядности */
-    border-bottom: 1px solid #ddd; /* Разделитель между секциями */
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Центрируем секции */
+    border-bottom: 1px solid #eee;
 }
 
-/* Чередование фона для лучшей читаемости */
-#home { background-color: #f4f4f4; }
-#about { background-color: #e9e9e9; }
-#services { background-color: #f4f4f4; }
-#contact { background-color: #e9e9e9; }
-
-h1, h2 {
-    color: #333;
+section:last-of-type {
+    border-bottom: none;
 }
 
-/* Приветственное сообщение из JS */
-.welcome {
-    color: #007BFF;
-    font-weight: bold;
-    font-size: 1.2em;
+img {
+    max-width: 100%; /* Адаптивность изображений */
+    height: auto;
+    margin-top: 15px;
 }
 
+/* Стили для формы из примера */
+form {
+    margin-top: 20px;
+}
 
-/* Стили для подвала */
+input[type="text"],
+input[type="email"] {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 footer {
+    text-align: center;
+    padding: 20px;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 15px 0;
 }
