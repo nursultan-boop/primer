@@ -1,0 +1,68 @@
+/* Базовые стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Добавляем отступ сверху, чтобы контент не заезжал под шапку */
+    color: #333;
+}
+
+/* Плавная прокрутка к разделам */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Стили для шапки и навигации */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* Фиксируем шапку вверху экрана */
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для основных разделов */
+section {
+    padding: 60px 20px; /* Вертикальные и горизонтальные отступы */
+    min-height: 250px; /* Минимальная высота для наглядности */
+    border-bottom: 1px solid #ddd; /* Разделитель между секциями */
+}
+
+/* Чередование фона для лучшей читаемости */
+#home { background-color: #f4f4f4; }
+#about { background-color: #e9e9e9; }
+#services { background-color: #f4f4f4; }
+#contact { background-color: #e9e9e9; }
+
+h1, h2 {
+    color: #333;
+}
+
+/* Приветственное сообщение из JS */
+.welcome {
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/* Стили для подвала */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
